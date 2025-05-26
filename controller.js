@@ -3,7 +3,7 @@ const { response } = require("express");
 const fs = require('node:fs');
 
 const ai = new GoogleGenAI({
-    apiKey: "AIzaSyAR45DOv6knyYD7zIWY3CIPsklJRBM0YZk"
+    apiKey: "YOUR API KEY"
 });
 
 
