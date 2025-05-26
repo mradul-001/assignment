@@ -32,5 +32,5 @@ I used Postman Client to test the api. You can follow these steps to do the same
 
         |Key   | Value                      |
         |------|----------------------------|
-        |"data"|Meeting minutes you copied (in quotes) |
+        |`data`|Meeting minutes you copied (in quotes) |
     - Press on `Send` and you will get the result stored in `result.txt`.

@@ -76,7 +76,7 @@ async function getSummary(req, res) {
             status: true
         });
     } catch {
-        return res.json(201).json({
+        return res.status(201).json({
             response: "Error processing the requests."
         })
     }
