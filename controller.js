@@ -6,7 +6,6 @@ const ai = new GoogleGenAI({
     apiKey: "YOUR API KEY"
 });
 
-
 async function fetchSummary(query) {
     const apiCall = ai.models.generateContent({
         model: "gemini-2.0-flash",
@@ -33,9 +32,6 @@ async function fetchSummary(query) {
         throw err;
     }
 }
-
-
-
 
 async function getSummary(req, res) {
 
