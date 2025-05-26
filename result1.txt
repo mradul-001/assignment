@@ -1,0 +1,29 @@
+Meeting Minutes:
+"
+Meeting Minutes – May 26, 2025
+- The marketing campaign for the new app will start on June 1st.
+- Anjali will finalize the campaign materials by May 30.
+- Rajesh suggested targeting college students in tier-1 cities.
+- Aditya to coordinate with design team for social media creatives.
+- Next review meeting scheduled for May 31st at 4 PM.
+"
+
+Response: 
+{
+  "summary": "The meeting focused on the upcoming marketing campaign launch for the new app, scheduled for June 1st. Responsibilities were assigned for finalizing campaign materials and coordinating social media creatives. The team also discussed targeting strategies, including college students in tier-1 cities.",
+  "decisions": [
+    "Marketing campaign to start on June 1st",
+    "Next review meeting scheduled for May 31st at 4 PM"
+  ],
+  "actionItems": [
+    {
+      "task": "Finalize the campaign materials",
+      "owner": "Anjali",
+      "due": "May 30"
+    },
+    {
+      "task": "Coordinate with design team for social media creatives",
+      "owner": "Aditya"
+    }
+  ]
+}

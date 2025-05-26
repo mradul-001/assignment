@@ -1,0 +1,30 @@
+Meeting Minutes:
+"
+Meeting Minutes – April 12, 2025
+- Decided to migrate the backend from Firebase to PostgreSQL.
+- Meera will handle database schema design by April 15.
+- Ali will set up the new server environment by April 17.
+- Discussed implementing JWT-based authentication.
+- Next check-in on April 18 at 3 PM.
+"
+
+Response:
+{
+  "summary": "The team decided to migrate the backend from Firebase to PostgreSQL. Meera and Ali were assigned tasks related to database schema design and server environment setup, respectively. The meeting also covered the implementation of JWT-based authentication, and a follow-up meeting is scheduled for April 18.",
+  "decisions": [
+    "Migrate backend from Firebase to PostgreSQL",
+    "Implement JWT-based authentication"
+  ],
+  "actionItems": [
+    {
+      "task": "Handle database schema design",
+      "owner": "Meera",
+      "due": "April 15"
+    },
+    {
+      "task": "Set up the new server environment",
+      "owner": "Ali",
+      "due": "April 17"
+    }
+  ]
+}

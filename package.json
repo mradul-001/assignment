@@ -1,0 +1,16 @@
+{
+  "name": "intern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon run app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.0.1",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
