@@ -24,12 +24,13 @@ npm run dev
 
 ### Usage:
 I used Postman Client to test the api. You can follow these steps to do the same:
-- The 2 files `result1.txt` and `result2.txt` has the output of the two testcases I got from ChatGPT. You can copy the meeting minutes (with quotes).
+- The 2 files `result1.txt` and `result2.txt` has the output of the two testcases I tried on Postman Client. 
+- You can copy the meeting minutes (with quotes) from either these two files or any of the 3 sample files.
 - Go to Postman client
-    - Set the URL to `http://localhost:3000/getSummary`
+    - Set the URL to `http://localhost:3000/process-meeting`
     - Set the params as follows:
 
         |Key   | Value                      |
         |------|----------------------------|
-        |"data"|Meeting minutes you copied  |
+        |"data"|Meeting minutes you copied (in quotes) |
     - Press on `Send` and you will get the result stored in `result.txt`.

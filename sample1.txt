@@ -1,0 +1,5 @@
+Sprint Planning – May 26
+- Finalized tasks for sprint ending June 9.
+- Code review sessions scheduled every Friday.
+- Dev team to focus on bug fixes and performance.
+- Design team to deliver new wireframes by May 31.

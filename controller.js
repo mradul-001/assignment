@@ -1,4 +1,5 @@
 const { GoogleGenAI } = require("@google/genai");
+const { response } = require("express");
 const fs = require('node:fs');
 
 const ai = new GoogleGenAI({
@@ -15,10 +16,10 @@ async function fetchSummary(query) {
 }
 
 async function getSummary(req, res) {
+    try {
+        const data = req.query.data;
 
-    const data = req.query.data;
-
-    const query = `For the following meeting minutes, you need to give me the following things:
+        const query = `For the following meeting minutes, you need to give me the following things:
                     - A 2–3 sentence summary
                     - A list of key decisions
                     - A structured list of action items with task, owner (optional), and deadline (optional)
@@ -59,22 +60,26 @@ async function getSummary(req, res) {
                         The meeting minutes you have to work on are : ${data}
                     `;
 
+        const response = await fetchSummary(query);
+        const responseText = response.candidates[0].content.parts[0].text;
+        const cleanText = responseText.replace(/```json|```/g, "").trim();
+        const jsonResponse = JSON.parse(cleanText);
 
-    const response = await fetchSummary(query);
-    const responseText = response.candidates[0].content.parts[0].text;
-    const cleanText = responseText.replace(/```json|```/g, "").trim();
-    const jsonResponse = JSON.parse(cleanText);
+        fs.writeFile('./result.txt', cleanText, err => {
+            if (err) {
+                console.error(err);
+            }
+        });
 
-    fs.writeFile('./result.txt', cleanText, err => {
-        if (err) {
-            console.error(err);
-        }
-    });
-
-    return res.status(200).json({
-        response: jsonResponse,
-        status: true
-    });
+        return res.status(200).json({
+            response: jsonResponse,
+            status: true
+        });
+    } catch {
+        return res.json(201).json({
+            response: "Error processing the requests."
+        })
+    }
 }
 
 module.exports = getSummary;
