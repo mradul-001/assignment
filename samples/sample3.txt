@@ -1,5 +1,5 @@
-Project Update – May 26
+"Project Update – May 26
 - Backend API integration completed by May 30.
 - Anjali to test payment gateway by June 2.
 - Discussed UI improvements for user profile page.
-- Client requested a demo by June 7.
+- Client requested a demo by June 7."
